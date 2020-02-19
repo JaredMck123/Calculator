@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400" prefWidth="400" spacing="10" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+    <fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+
+    <StackPane alignment="CENTER">
+        <Rectangle fill="TRANSPARENT" height="50" opacity="0.0" stroke="GRAY" width="310" />
+        <Text fx:id="output" fill="WHITE" nodeOrientation="LEFT_TO_RIGHT" textAlignment="RIGHT">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+    </StackPane>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: #F5F5F5;" text="7" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: #F5F5F5;" text="8" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: #F5F5F5;" text="9" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: orange;" text="/" textFill="WHITE" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="4" textFill="WHITE" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="5" textFill="WHITE" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="6" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: orange;" text="*" textFill="WHITE" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="1" textFill="WHITE" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="2" textFill="WHITE" />
+        <Button onAction="#processNumpad" prefWidth="70" style="-fx-background-color: grey;" text="3" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: orange;" text="-" textFill="WHITE" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#processOperator" prefWidth="150" style="-fx-background-color: grey;" text="sqr" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: grey;" text="sqrt" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: orange;" text="log" textFill="WHITE" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#processNumpad" prefWidth="150" style="-fx-background-color: gray;" text="0" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: grey;" text="=" textFill="WHITE" />
+        <Button onAction="#processOperator" prefWidth="70" style="-fx-background-color: orange;" text="+" textFill="WHITE" />
+    </HBox>
+
+</VBox>
